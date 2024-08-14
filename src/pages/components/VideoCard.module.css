@@ -52,3 +52,60 @@
     background-position: 100% 50%;
   }
 }
+
+
+.videoContainer:hover .videoPlayer {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.videoPlayer {
+ 
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.videoContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.videoPlayer {
+
+  
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.videoPlayer:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.waveEffect {
+  filter: url(#wave);
+}
+
+.liquidEffect {
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.gridSphere {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+}
+
+.sphere {
+
+
+  background-color: #fff;
+  border-radius: 50%;
+  filter: url(#gridWarp);
+}

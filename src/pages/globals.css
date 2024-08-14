@@ -47,3 +47,16 @@ body {
   display: block;
   transition: transform 0.5s ease-in-out;
 }
+
+
+.videoContainer:hover .videoPlayer {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.videoPlayer {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
